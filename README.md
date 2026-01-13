@@ -1,50 +1,174 @@
-# Welcome to your Expo app 👋
+# TO-DO LIST APP - React Native
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A beautiful and intuitive to-do list application built with React Native and Expo. Stay organized and manage your daily tasks efficiently with this feature-rich mobile app.
 
-## Get started
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+## 📱 Features
 
-2. Start the app
+- ✅ **Add Tasks** - Quickly add new tasks with an intuitive input interface
+- ✏️ **Mark as Complete** - Tap tasks to toggle between pending and completed states
+- 🗑️ **Delete Tasks** - Remove tasks you no longer need
+- 📊 **Real-time Counters** - Track pending and completed tasks at a glance
+- 🎨 **Modern UI** - Beautiful gradient background with smooth animations
+- 💾 **Persistent Storage** - Tasks are saved using AsyncStorage
+- 📱 **Cross-platform** - Works on iOS and Android
 
-   ```bash
-   npx expo start
-   ```
+##  Screenshots
 
-In the output, you'll find options to open the app in a
+  Web Interface
+   ![Web Interface](./screenshots/webinterface.jpeg)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+  Android Interface
+   ![Android Interface](./screenshots/androidinterface.jpeg)
+    
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+##  Technologies Used
 
-## Get a fresh project
+- **React Native** - Mobile app framework
+- **Expo** - Development platform
+- **Expo Router** - File-based routing
+- **React Navigation** - Navigation library
+- **AsyncStorage** - Local data persistence
+- **React Hooks** - State management
 
-When you're ready, run:
+##  Prerequisites
 
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo Go](https://expo.dev/client) app on your mobile device
+- [Git](https://git-scm.com/)
+
+##  Installation
+
+1. **Clone the repository**
 ```bash
-npm run reset-project
+   git clone https://github.com/prathamjagad/task-todo.git
+   cd task-todo
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. **Install dependencies**
+```bash
+   npm install
+```
 
-## Learn more
+3. **Start the development server**
+```bash
+   npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+4. **Run on your device**
+   - Scan the QR code with **Expo Go** app (Android) or Camera app (iOS)
+   - Or press `a` for Android emulator or `i` for iOS simulator
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+##  Running the App
 
-## Join the community
+### Development Mode
+```bash
+npm start
+```
 
-Join our community of developers creating universal apps.
+### Android
+```bash
+npm run android
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### iOS
+```bash
+npm run ios
+```
+
+### Web
+```bash
+npm run web
+```
+
+### Clear Cache
+```bash
+npx expo start --clear
+```
+
+##  Project Structure
+```
+task-todo/
+├── app/                    # App screens (Expo Router)
+│   └── index.js           # Home screen
+├── components/            # Reusable components
+│   ├── AddTask.js        # Task input component
+│   └── TaskItem.js       # Task list item component
+├── assets/               # Images, fonts, icons
+├── scripts/              # Utility scripts
+├── .expo/                # Expo configuration
+├── .vscode/              # VS Code settings
+├── node_modules/         # Dependencies
+├── app.json              # Expo app configuration
+├── package.json          # Project dependencies
+├── tsconfig.json         # TypeScript configuration
+└── README.md             # Project documentation
+```
+
+
+### AddTask Component
+Handles task input and addition functionality with a clean, modern interface.
+
+### TaskItem Component
+Displays individual tasks with:
+- Checkbox for completion toggle
+- Task title with strike-through effect for completed tasks
+- Status badge (Pending/Completed)
+- Delete button
+
+### HomeScreen (index.js)
+Main screen featuring:
+- Task counters
+- Task list
+- Empty state UI
+- Success message when all tasks completed
+
+##  Key Features Explained
+
+### Task Management
+- **Add**: Enter task text and press "Add" or hit Enter
+- **Complete**: Tap on any task to mark it as complete/incomplete
+- **Delete**: Tap the trash icon to remove a task
+
+### Visual Feedback
+- Completed tasks show with strikethrough text
+- Color-coded status badges (Blue: Pending, Green: Completed)
+- Smooth animations and transitions
+- Celebration message when all tasks are done
+
+##  Troubleshooting
+
+### App won't connect to Expo Go
+```bash
+npx expo start --tunnel
+```
+
+### Cache issues
+```bash
+npx expo start --clear
+```
+
+### Version mismatch errors
+Make sure your Expo Go app version matches the SDK version in package.json (SDK 54)
+
+##  Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+##  Author
+
+**Pratham Jagad**
+
+- GitHub: [@prathamjagad](https://github.com/prathamjagad)
+- Email: jagadpratham@gmail.com
+
