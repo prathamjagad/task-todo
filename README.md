@@ -17,9 +17,11 @@ A beautiful and intuitive to-do list application built with React Native and Exp
 ##  Screenshots
 
   Web Interface
+  
    ![Web Interface](./screenshots/webinterface.jpeg)
 
   Android Interface
+   
    ![Android Interface](./screenshots/androidinterface.jpeg)
     
 
